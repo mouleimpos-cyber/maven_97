@@ -18,7 +18,7 @@ public class App {
             Document doc = dBuilder.parse(file);
             doc.getDocumentElement().normalize();
 
-            // Reading XML tags
+            // Reading XML content
             Element root = doc.getDocumentElement();
 
             String name = root.getElementsByTagName("name").item(0).getTextContent();
@@ -32,4 +32,3 @@ public class App {
         }
     }
 }
-
